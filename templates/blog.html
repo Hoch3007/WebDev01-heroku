@@ -1,0 +1,24 @@
+{% extends "basic_layout.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="well">
+                <h1>Blog <sup>3007</sup> <i class="fas fa-pen-nib"></i></h1>
+                <p>Here you will find insights, snippets, ideas or reflections. Maybe you'll also find some explanations on individual topics or other things that the developer's everyday life has to offer.</p>
+                <h2 class="btn btn-primary btn-lg"><i class="fas fa-sign-in-alt"></i> Log in</h2>
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <div class="well">
+                {% for post in posts %}
+                    <h1>{{post.title}}</h1>
+                    <p>by {{post.author}} on {{post.date_posted}}</p>
+                    <p>{{post.content}}</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

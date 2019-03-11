@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Raleway');
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background: #1b264f;
+}
+
+    /* Add a gray background color and some padding to the footer */
+footer {
+    background-color: #576ca8;
+    padding: 25px;
+    color: #f5f3f5
+}
+
+
+body {
+    background: #f5f3f5;
+    font-family: 'Raleway', sans-serif;
+    font-size: 200%
+    color: #302b27;
+}
+
+.container-fluid #myNavbar .navbar-nav li a {
+    color: #f5f3f5;
+}
+
+.container-fluid #myNavbar .navbar-nav li a:hover {
+    color: #576ca8;
+}
+
+.container-fluid .navbar-header .navbar-brand {
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    color: #f5f3f5;
+}
+
+.container-fluid .navbar-header .navbar-brand:hover {
+    color: #576ca8;
+}
+
+.container-fluid .jumbotron .display-4 {
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-weight: bold;
+    color: #1b264f;
+}
+
+.container-fluid .jumbotron .btn, .row .col-lg-6 .well .card .card-body .btn, .container .row .col-lg-4 .well .btn  {
+    background: #274690;
+    border: 1px solid #576ca8;
+    border-radius: 5px;
+}
+
+.container-fluid .jumbotron .btn:hover, .row .col-lg-6 .well .card .card-body .btn:hover,  .container .row .col-lg-4 .well .btn:hover {
+    background: #576ca8;
+}
+
+.container .row .col-lg-8 .well, .container .row .col-lg-4 .well{
+    margin-top: 15px;
+}
+
+.container .row .col-lg-4 .well h1 {
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-weight: bold;
+    color: #1b264f;
+}
+
+.container .row .col-lg-8 .well h1 {
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-weight: bold;
+    color: #1b264f;
+}
+
+.row .col-lg-6 .well .card img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.row .col-lg-6 .well {
+    margin-top: 15px;
+}
+
+.row .col-lg-6 .well .card .card-body h5 {
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-weight: bold;
+    font-size: 25px;
+    color: #1b264f;
+
+}
+
+nav + .container, nav + .container-fluid {
+       margin-top: 50px;
+
+
+}
+
+.container-fluid .jumbotron {
+    background #f5f3f5;
+}
