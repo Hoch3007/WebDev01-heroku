@@ -70,8 +70,10 @@ def guess():
 
         # flask app akzeptiert bei Cookies keine Integer
         if int(secret_number) == int(number_guess):
-            response.set_cookie("secret_number", expires=0)
-            return render_template("result.html")
+            response = make_response(render_template("result.html"))
+            # expires funktioniert nicht
+            response.set_cookie("secret_number", max_age=0)
+            return response
 
         else:
 
