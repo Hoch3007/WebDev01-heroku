@@ -57,7 +57,7 @@ body {
     background: #576ca8;
 }
 
-.container .row .col-lg-8 .well, .container .row .col-lg-4 .well{
+.container .row .col-lg-8 .well, .container .row .col-lg-4 .well, .container .row .col-lg-12 .well{
     margin-top: 15px;
 }
 

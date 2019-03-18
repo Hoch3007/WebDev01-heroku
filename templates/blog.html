@@ -11,13 +11,19 @@
             </div>
         </div>
         <div class="col-lg-8">
-            <div class="well">
+
                 {% for post in posts %}
-                    <h1>{{post.title}}</h1>
-                    <p>by {{post.author}} on {{post.date_posted}}</p>
-                    <p>{{post.content}}</p>
+                    <div class="well">
+                        {% if 'March' not in post.date_posted %}
+                            <h1>{{post.title}}</h1>
+                            <p>by {{post.author}} on {{post.date_posted}}</p>
+                            <p>{{post.content}}</p>
+                        {% else %}
+                            <p>There should be a blog post, but I can't find it!</p>
+                        {% endif %}
+                    </div>
                 {% endfor %}
-            </div>
+
         </div>
     </div>
 </div>

@@ -1,0 +1,20 @@
+{% extends "basic_layout.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="well">
+                <form method="post" action="/game">
+                  <div class="form-group">
+                    <label for="inputGame">Just a small game. I chose a number between 0 and 30. You have to guess it.</label>
+                    <input type="text" class="form-control" id="inputGame" aria-describedby="guessHelp" placeholder="Enter a your guess!" name="guess">
+                    <small id="guessHelp" class="form-text text-muted">It's just one guess, think hard!</small>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-lg">Absenden</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
