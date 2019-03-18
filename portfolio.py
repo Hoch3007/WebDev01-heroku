@@ -52,7 +52,10 @@ def contact():
 
     if request.method == "POST":
         response = make_response(render_template("success.html"))
+        #response = make_response(redirect("contact.html"))
         response.set_cookie("user_name", contact_name)
+        #flash("Great! Thank you. Your message was sent.", 'success')
+        #return redirect('/contact')
         return response
     else:
         user_name = request.cookies.get("user_name")
@@ -78,11 +81,13 @@ def guess():
         else:
 
             if int(secret_number) > int(number_guess):
-                direction = "higher"
+                #direction = "higher"
+                flash("Sorry, that's not correct. Your guess "+ str(number_guess) + " is too low. Guess again!", 'danger')
             else:
-                direction = "lower"
-
-            return render_template("error.html", direction=direction)
+                #direction = "lower"
+                flash("Sorry, that's not correct. Your guess " + str(number_guess) + " is too high. Guess again!", 'danger')
+            #return render_template("error.html", direction=direction)
+            return redirect("/game")
 
     elif request.method == "GET":
 
